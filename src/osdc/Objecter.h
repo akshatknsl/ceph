@@ -201,9 +201,9 @@ struct ObjectOperation {
                       uint8_t expected_size_probability) {
     OSDOp& osd_op = add_op(op);
     osd_op.op.op = op;
-    osd_op.op.hint.expected_size = expected_size;
-    osd_op.op.hint.expected_write_size = expected_write_size;
-    osd_op.op.hint.expected_size_probability = expected_size_probability;
+    osd_op.op.alloc_hint.expected_size = expected_size;
+    osd_op.op.alloc_hint.expected_write_size = expected_write_size;
+    osd_op.op.alloc_hint.expected_size_probability = expected_size_probability;
   }
 
   // ------

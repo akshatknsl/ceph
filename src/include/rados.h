@@ -470,7 +470,7 @@ struct ceph_osd_op {
 			__le64 expected_size;
 			__le64 expected_write_size;
 			__u8 expected_size_probability;
-		} __attribute__ ((packed)) hint;
+		} __attribute__ ((packed)) alloc_hint;
 	};
 	__le32 payload_len;
 } __attribute__ ((packed));
